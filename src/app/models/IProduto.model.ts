@@ -5,4 +5,5 @@ export interface IProduto {
   classificacao: number;
   capa: string;
   generos: string[];
+  pagina?: string;
 }

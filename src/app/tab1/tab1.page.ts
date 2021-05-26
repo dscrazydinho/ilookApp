@@ -25,7 +25,8 @@ export class Tab1Page {
         'Ação',
         'Fantasia',
         'Aventura'
-      ]
+      ],
+      pagina: '/mortal-kombat'
     },
     {
       nome: 'Sem Remorso (2021)',
@@ -37,19 +38,8 @@ export class Tab1Page {
         'Ação',
         'Thriller',
         'Guerra'
-      ]
-    },
-    {
-      nome: 'Mortal Kombat (1994)',
-      data: '15/04/2021',
-      duracao: '1h 50m',
-      classificacao: 76,
-      capa:'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ijvC2w2yANsfgLT3LMu2zFr0fxh.jpg',
-      generos: [
-        'Ação',
-        'Fantasia',
-        'Aventura'
-      ]
+      ],
+      pagina: '/sem-remorso'
     }
   ];
 
