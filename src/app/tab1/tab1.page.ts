@@ -11,7 +11,7 @@ export class Tab1Page {
 
   constructor(public alertController: AlertController, public toastController: ToastController) { }
 
-  async exibirAlertaFavorito () {
+  async exibirAlertaFavorito() {
     const alert = await this.alertController.create({
       cssClass: 'color:danger',
       header: 'Alerta!',
