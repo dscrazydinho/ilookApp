@@ -17,7 +17,7 @@
 
     <ion-item-sliding *ngFor="let filme of listaFilmes">
 
-      <ion-item lines="full" [routerLink]="filme.pagina">
+      <ion-item lines="full" (click)="exibirFilme(filme)">
         <ion-thumbnail slot="start">
           <img [src]="filme.capa" />
         </ion-thumbnail>
