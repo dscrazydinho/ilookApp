@@ -9,8 +9,22 @@
 <ion-content [fullscreen]="true">
   <img src="https://i.pinimg.com/originals/5e/d8/b0/5ed8b0f11fec980809c1a4ad4201e870.png" alt="">
 
-  <h1>Alessandro Nunes</h1>
-  <p>Aluno de ADS 3º Semestre</p>
-  <a href="mailto:alessandro.nunes.cr@gmail.com">@alessandro.nunes</a>
+  <h1>{{user.name}}</h1>
+  <ion-list>
+    <ion-item lines="full">{{user.name}}</ion-item>
+    <ion-item lines="full">{{user.email}}</ion-item>
+    <ion-item lines="full">{{user.phone}}</ion-item>
+    <ion-item lines="full">{{user.website}}</ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item lines="full">{{user.address.street}}</ion-item>
+    <ion-item lines="full">{{user.address.suite}}</ion-item>
+    <ion-item lines="full">{{user.address.city}}</ion-item>
+    <ion-item lines="full">{{user.address.zipcode}}</ion-item>
+      </ion-list>
+
+
+
 
 </ion-content>

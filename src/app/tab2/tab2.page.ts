@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IPost } from '../models/IPosts.model';
+import { UsersService } from '../services/users.service';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +9,17 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  public post: IPost;
+
+  constructor(
+    private postService: UsersService
+  ) {
+    this.postService.buscarPost().subscribe(dados => {
+      console.log(dados);
+      this.post = dados;
+    });
+  }
+
+
 
 }
